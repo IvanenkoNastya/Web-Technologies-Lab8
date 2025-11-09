@@ -1,0 +1,119 @@
+:root {
+    --title-bg-color: rgb(235, 237, 238);
+    --action-color: rgba(255, 0, 0, 0.699);
+    --text-dark-color: rgba(70, 69, 69);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+
+    color: var(--text-dark-color);
+    font-family: "Montserrat", cursive;
+    font-size: 13px;
+}
+
+.hero-container {
+    background-color: var(--title-bg-color);
+    width: 100%;
+    padding: 40px 10%;
+    margin: 30px 0;
+    color: var(--text-dark-color);
+}
+
+.hero {
+    font-family: "Montserrat", cursive;
+    font-size: 20px;
+}
+
+/*.hero+p {
+    font-size: 13px;
+}*/
+
+.works {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+}
+
+._top-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+._top-block > div {
+    font-family: "Montserrat", cursive;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-dark-color);
+}
+
+.button {
+    font-family: "Montserrat", cursive;
+    font-size: 7px;
+    font-weight: 600;
+    width: 92px;
+    height: 28px;
+    border: 1px solid white;
+    color: white;
+    background: var(--action-color);
+}
+
+._imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*._imgs img {
+    width: 50px;
+}*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.row > img {
+    width: 265px;
+    height: 200px;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.contact-us > div {
+    font-family: "Montserrat", cursive;
+    font-size: 15px;
+    color: var(--text-dark-color);
+    margin-bottom: 10px;
+}
+
+.contact-us .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    width: 80px;
+    height: 24px;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.title::after {
+    content: " --";
+    color: var(--action-color);
+}
