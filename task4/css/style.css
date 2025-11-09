@@ -15,8 +15,16 @@ body {
     font-size: 13px;
 }
 
-@media (50em >= width >= 30em) {
+@media (576рх < width < 768рx) {
+    ._imgs {
+        width: 500px;
+    }
+}
 
+@media (1рх < width < 576рx) {
+    ._imgs {
+        width: 300px;
+    }
 }
 
 .hero-container {
@@ -72,6 +80,7 @@ body {
     align-self: center;
     gap: 5px;
     max-width: 700px;
+
 }
 
 ._imgs > img {
