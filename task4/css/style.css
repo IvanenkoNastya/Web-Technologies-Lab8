@@ -15,6 +15,10 @@ body {
     font-size: 13px;
 }
 
+@media (50em >= width >= 30em) {
+
+}
+
 .hero-container {
     background-color: var(--title-bg-color);
     width: 100%;
@@ -27,10 +31,6 @@ body {
     font-family: "Montserrat", cursive;
     font-size: 20px;
 }
-
-/*.hero+p {
-    font-size: 13px;
-}*/
 
 .works {
     display: flex;
@@ -66,22 +66,16 @@ body {
 
 ._imgs {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-self: center;
+    gap: 5px;
+    max-width: 700px;
 }
 
-/*._imgs img {
-    width: 50px;
-}*/
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.row > img {
-    width: 265px;
+._imgs > img {
+    width: 200px;
     height: 200px;
 }
 
